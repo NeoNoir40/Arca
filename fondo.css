@@ -1,0 +1,66 @@
+
+.clasificacionbg{
+    margin:0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url(./imagenes/arca.jpg) center;
+    background-size: cover
+}
+
+.indexbg{
+    margin:0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url(./imagenes/arca.jpg) center;
+    background-size: cover
+}
+
+.botones{
+    padding: 2rem 3rem;
+    text-align: center;
+    color: white;
+    border: 3px solid white;
+    box-shadow: 0px 0px 25px #222;
+    backdrop-filter: blur(3px);
+}
+
+
+
+.tabla_clasificacion{
+    padding: 2rem 3rem;
+    text-align: center;
+    color: black;
+    border: 3px solid white;
+    box-shadow: 0px 0px 25px #222;
+    backdrop-filter: blur(100px);
+}
+
+
+.alimentacionbg{
+    margin:0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url(./imagenes/arca.jpg) center;
+    background-size: cover
+}
+
+.tabla_alimentacion{
+    padding: 2rem 3rem;
+    text-align: center;
+    color: white;
+    border: 3px solid white;
+    box-shadow: 0px 0px 25px #222;
+    backdrop-filter: blur(3px);
+}
+
+
+

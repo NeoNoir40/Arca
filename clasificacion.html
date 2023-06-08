@@ -2,23 +2,22 @@
 <html lang="en">
 
 <head>
-  <title>Title</title>
+  <title>Arca</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="fondo.css">
-
+    <link rel="stylesheet" href="imagenes-index.css">
+    
 </head>
-
 <body>
   <header>
     <!-- place navbar here -->
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark " id="navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Arca</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,62 +41,42 @@
               <a class="nav-link" href="animales.php">Animales</a>
             </li>
           </div>
-          </div>
+    </nav>
   </header>
-  <main class="habitat-bg">
-    
-        <!-- ========== Start FORM ========== -->
-<div class="habitat-tabla">
-  <form action="Insert\insertar_habitat.php" method="post">
-    <div class="mb-3">
-      <label for="input_habitat" class="form-label">Habitat</label>
-        <input type="text" class="form-control" id="input_habitat" name="nombre_habitat" Required>
-      <div class="form-text">Escribe de el habitat</div>
-    </div>
-    <div>
-      <button class="btn btn-primary" type="submit">Enviar
-    </div>
-  </form>
-  <!-- ========== End FORM ========== -->
-<div class="tabla_habitat">
-<table class="table">
-<thead>
-    <tr>
-    <th scope="col">#</th>
-    <th scope="col">Nombre</th>
-    <th scope="col">Eliminar</th>
-    <th scope="col">Actualizar</th>
-    </tr>
-</thead>
-<tbody>
-    <?php
-include('connection/connection.php');
-$c =  1;
-$consulta = "SELECT * FROM habitat";
-$resultado = mysqli_query($conn,$consulta);
+<main class="indexbg">
 
-while($fila = mysqli_fetch_array($resultado)){
-?>
+<div class="clasificaciones">
+  <div class="boton-aqua">
+    <img class="pezpayaso" src="./imagenes/pezpayaso.jpg" alt="">
+    <h1>Acuaticos</h1>
+  </div>
 
-<tr class="table">
-<th scope="row"><?php echo $c?></th>
-<td><?php echo $fila['nombre_habitat']?></td>
-<td>
-<a href="Update\habitats.php?id_habitat= <?php echo $fila['id_habitat']?>">
-          <i class="bi bi-arrow-clockwise text-warning"></i>
-        </a>
-</td>
-<td>
-<a href="Delete\eliminar_habitat.php?id_habitat= <?php echo $fila['id_habitat']?>">
-          <i class="bi bi-trash text-danger"></i>
-</td>
-</tr>
-<?php $c++; } ?>
-</tbody>
-</table>
+  <div class="boton-aves">
+    <img class="guacamayo" src="./imagenes/guacamaya.jpg" alt="">
+    <h1>Aves</h1>
+  </div>
+
+  <div class="boton-reptil">
+    <img class="camaleon" src="./imagenes/reptil.jpg" alt="">
+    <h1>Reptiles</h1>
+  </div>
+  
+  <div class="boton-anfibio">
+    <img class="anfibio" src="./imagenes/anfibio.jpg" alt="">
+    <h1>Anfibios</h1>
+  </div>
+
+  <div class="boton-insecto">
+    <img class="insecto" src="./imagenes/mariposa.jpeg" alt="">
+    <h1>Insectos</h1>
+  </div>
+
+  <div class="boton-mamifero">
+    <img class="mamifero" src="./imagenes/Jaguar.jpg" alt="">
+    <h1>Mamiferos</h1>
+  </div>
 </div>
-</div>
-  </main>
+</main>
   <footer>
     <!-- place footer here -->
   </footer>

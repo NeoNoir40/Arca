@@ -7,6 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="fondo.css">
+  <link rel="stylesheet" href="imagenes-index.css">
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
@@ -14,7 +15,7 @@
 
 </head>
 
-<body>
+<body class="bodyclassificacion">
 </div>
     <header>
     <!-- place navbar here -->
@@ -46,12 +47,46 @@
     </header>
     
   <main class="clasificacionbg">
+
+  <div>
+  <div class="clasificaciones">
+  <div class="boton-aqua">
+    <img class="pezpayaso" src="./imagenes/pezpayaso.jpg" alt="">
+    <h1>Acuaticos</h1>
+  </div>
+
+  <div class="boton-aves">
+    <img class="guacamayo" src="./imagenes/guacamaya.jpg" alt="">
+    <h1>Aves</h1>
+  </div>
+
+  <div class="boton-reptil">
+    <img class="camaleon" src="./imagenes/reptil.jpg" alt="">
+    <h1>Reptiles</h1>
+  </div>
+  
+  <div class="boton-anfibio">
+    <img class="anfibio" src="./imagenes/anfibio.jpg" alt="">
+    <h1>Anfibios</h1>
+  </div>
+
+  <div class="boton-insecto">
+    <img class="insecto" src="./imagenes/mariposa.jpeg" alt="">
+    <h1>Insectos</h1>
+  </div>
+
+  <div class="boton-mamifero">
+    <img class="mamifero" src="./imagenes/Jaguar.jpg" alt="">
+    <h1>Mamiferos</h1>
+  </div>
+</div>
+  </div>
   <div class="tabla_clasificacion">
  <!-- ========== Start Form ========== -->
  <form class="entradacl" action="Insert\insertar_clasificacion.php" method="post">
   <div class="mb-3">
     <label for="input_clasificacion" class="form-label">Clasificacion</label>
-    <input type="text" class="form-control" id="input_clasificacion" name="nombre_clasificacion">
+    <input type="text" class="form-control" id="input_clasificacion" name="nombre_clasificacion" Required>
     <div class="form-text">Escribe la clasificacion del animal</div>
   </div>
   <div>

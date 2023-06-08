@@ -38,7 +38,7 @@ $fila = mysqli_fetch_array($query);
 <form action="actualizar_clasificacion.php" method="post">
 <div class="mb-3">
 <label for="input_clasificacion" class="form-label"> Clasificacion </label>
-<input type="text" class="form-control" id="input_clasificacion" name="nombre_clasificacion" value ="<?php echo $fila['nombre_clasificacion']?>">
+<input type="text" class="form-control" id="input_clasificacion" name="nombre_clasificacion" value ="<?php echo $fila['nombre_clasificacion']?>" Required>
 </div>
 <input type="hidden" class="form-control" id="input_clasificacion" name="id_clasificacion" value ="<?php echo $fila['id_clasificacion']?>">
 <button class="btn btn-primary me-md-2" type="submit">Actualizar</button>

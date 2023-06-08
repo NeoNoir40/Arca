@@ -39,7 +39,7 @@ $fila = mysqli_fetch_array($query);
 <form action="actualizar_habitat.php" method="post">
 <div class="mb-3">
 <label for="input_habitat" class="form-label"> Habitat </label>
-<input type="text" class="form-control" id="input_habitat" name="nombre_habitat" value ="<?php echo $fila['nombre_habitat']?>">
+<input type="text" class="form-control" id="input_habitat" name="nombre_habitat" value ="<?php echo $fila['nombre_habitat']?>" Required>
 </div>
 <input type="hidden" class="form-control" id="input_habitat" name="id_habitat" value ="<?php echo $fila['id_habitat']?>">
 <button class="btn btn-primary me-md-2" type="submit">Actualizar</button>

@@ -38,7 +38,7 @@ $fila = mysqli_fetch_array($query);
 <form action="actualizar_alimentacion.php" method="post">
 <div class="mb-3">
 <label for="input_alimentacion" class="form-label">Nombre Alimento</label>
-<input type="text" class="form-control" id="input_alimentacion" name="tipo_alimento" value ="<?php echo $fila['tipo_alimento']?>">
+<input type="text" class="form-control" id="input_alimentacion" name="tipo_alimento" value ="<?php echo $fila['tipo_alimento']?>" Required>
 </div>
 
 <input type="hidden" class="form-control" id="input_alimentacion" name="id_alimentacion" value ="<?php echo $fila['id_alimentacion']?>">

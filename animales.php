@@ -52,7 +52,7 @@
           <form action="Insert\insetar_animal.php" method="post">
           <div class="mb-3">
     <label for="input_animal" class="form-label">Animal</label>
-    <input type="text" class="form-control" id="input_animal" name="nombre_animal">
+    <input type="text" class="form-control" id="input_animal" name="nombre_animal" Required>
     <div class="form-text">Escribe el nombre del animal</div>
   </div>
   <div class="mb-3">
@@ -62,14 +62,14 @@
   </div>
   
   <label class="form-label">Clasificacion</label>
-    <select name="id_animal" class="form-select">
+    <select name="id_clasificacion" class="form-select">
                     <?php
                     include('connection/connection.php');
                     $consulta = "SELECT * FROM clasificacion";
                     $query = mysqli_query($conn,$consulta);
-                    while ($fila = mysqli_fetch_array($query)) {
+                    while ($fila = mysqli_fetch_array($query)){
                     ?>
-                        <option value="<?php echo $fila['id_animal']; ?>"><?php echo $fila['nombre_clasificacion']?></option>
+                        <option value="<?php echo $fila['id_clasificacion']?>"><?php echo $fila['nombre_clasificacion']?></option>
                     <?php } ?>
      </select>                 
 <label class="form-label">Alimentacion</label>
@@ -120,7 +120,7 @@
 include('connection/connection.php');
 $c =  1;
 
-$consulta = "SELECT nombre_animal, descripcion_animal , nombre_clasificacion , tipo_alimento, nombre_habitat FROM animal  
+$consulta = "SELECT id_animal,nombre_animal, descripcion_animal , nombre_clasificacion , tipo_alimento, nombre_habitat FROM animal  
 INNER JOIN clasificacion 
 ON animal.id_clasificacion_id = clasificacion.id_clasificacion
 INNER JOIN 
@@ -140,13 +140,14 @@ while($fila = mysqli_fetch_array($resultado)){
 <td><?php echo $fila['nombre_clasificacion']?></td>
 <td><?php echo $fila['tipo_alimento']?></td>
 <td><?php echo $fila['nombre_habitat']?></td>
+
 <td>
-  <a href="Update\animal.php?id_animales=<?php echo $fila['id_animal']?>">
-    <i class="bi bi-arrow-clockwise text-warning"></i>
+  <a href="Update\animal.php?id_animal= <?php echo $fila['id_animal']?>">
+      <i class="bi bi-arrow-clockwise text-warning"></i>
   </a>
 </td>
 <td>
-  <a href="Delete\eliminar_animal.php?id_animal=<?php echo$fila['id_animal']?>">
+  <a href="Delete\eliminar_animal.php?id_animal= <?php echo $fila['id_animal']?>">
     <i class="bi bi-trash text-danger"></i>
   </a>
 </td>

@@ -38,10 +38,53 @@ $fila = mysqli_fetch_array($query);
 <!-- ========== Start FORM ========== -->
 <form action="actualizar_animal.php" method="post">
 <div class="mb-3">
-<label for="input_animal" class="form-label"> Animal </label>
-<input type="text" class="form-control" id="input_animal" name="nombre_animal" value ="<?php echo $fila['nombre_animal']?>">
+  <label for="input_animal" class="form-label"> Animal </label>
+    <input type="text" class="form-control" id="input_animal" name="nombre_animal" value ="<?php echo $fila['nombre_animal']?>" Required>
+
+    <input type="hidden" class="form-control" id="input_animal" name="id_animal" value ="<?php echo $fila['id_animal']?>">
+
+
+<div class="mb-3">
+  <label for="input_animal" class="form-label">Descripcion</label>
+      <input type="text" class="form-control" id="input_animal" name="descripcion_animal">
+  <div class="form-text">(Opcional) Escribe algo acerca de este animal</div>
 </div>
-<input type="hidden" class="form-control" id="input_animal" name="id_animal" value ="<?php echo $fila['id_animal']?>">
+    
+  <label class="form-label">Clasificacion</label>
+      <select name="id_clasificacion" class="form-select">
+        <?php
+          include('../connection/connection.php');
+            $consulta = "SELECT * FROM clasificacion";
+              $query = mysqli_query($conn,$consulta);
+                while ($fila = mysqli_fetch_array($query)){
+        ?>
+          <option value="<?php echo $fila['id_clasificacion']?>"><?php echo $fila['nombre_clasificacion']?></option>
+          <?php } ?>
+      </select>                 
+  <label class="form-label">Alimentacion</label>
+      <select name="id_alimentacion" class="form-select">
+        <?php
+          include('../connection/connection.php');
+            $consulta = "SELECT * FROM alimentacion";
+              $query = mysqli_query($conn,$consulta);
+                while ($fila = mysqli_fetch_array($query)) {
+        ?>
+          <option value="<?php echo $fila['id_alimentacion']?>"><?php echo $fila['tipo_alimento']?></option>
+          <?php } ?>
+      </select>
+  <label class="form-label">Habitat</label>
+      <select name="id_habitat" class="form-select">
+        <?php
+          include('../connection/connection.php');
+            $consulta = "SELECT * FROM Habitat";
+              $query = mysqli_query($conn,$consulta);
+                while ($fila = mysqli_fetch_array($query)) {
+        ?>
+            <option value="<?php echo $fila['id_habitat']?>"><?php echo $fila['nombre_habitat']?></option>
+            <?php } ?>
+  </select>  
+</div>
+
 <button class="btn btn-primary me-md-2" type="submit">Actualizar</button>
 </form>
 <!-- ========== End FORM ========== -->

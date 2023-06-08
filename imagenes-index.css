@@ -1,0 +1,151 @@
+
+nav{
+    display: flex;
+}
+
+body{
+    display: grid
+};
+.boton-aqua{
+    height: 300px;
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+    border: solid 2px white;
+    backdrop-filter: blur(3px);
+    text-align: center;
+    color: white;
+    
+}
+
+.pezpayaso{
+    height: 200px;
+    width: 200px;
+}
+
+.boton-aves{
+    height: 300px;
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+    border: solid 2px white;
+    backdrop-filter: blur(3px);
+    text-align: center;
+    color: white;
+}
+
+.guacamayo{
+    height: 200px;
+    width: 200px;
+}
+
+.boton-reptil{
+    height: 300px;
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    position: f;
+    align-items: center;
+    border: solid 2px white;
+    backdrop-filter: blur(3px);
+    text-align: center;
+    color: white;
+}
+
+.camaleon{
+    height: 200px;
+    width: 200px;
+
+}
+
+.boton-anfibio{
+    height: 300px;
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    position: f;
+    align-items: center;
+    border: solid 2px white;
+    backdrop-filter: blur(3px);
+    text-align: center;
+    color: white;
+}
+.anfibio{
+    height: 200px;
+    width: 200px;
+}
+
+.boton-insecto{
+    height: 300px;
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    position: f;
+    align-items: center;
+    border: solid 2px white;
+    backdrop-filter: blur(3px);
+    text-align: center;
+    color: white;
+}
+
+.insecto{
+    height: 200px;
+    width: 200px;
+}
+
+
+.boton-mamifero{
+    height: 300px;
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    position: f;
+    align-items: center;
+    border: solid 2px white;
+    backdrop-filter: blur(3px);
+    text-align: center;
+    color: white;
+}
+
+.mamifero{
+    height: 200px;
+    width: 200px;
+
+}
+
+.habitat{
+    height: 400px;
+    width: 350px;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    align-items: center;
+    border: solid 2px white;
+    backdrop-filter: blur(3px);
+    text-align: center;
+    color: white;  
+}
+
+.clasificacion{
+    height: 400px;
+    width: 350px;
+    padding: 10px;
+    margin: 10px;
+    position: f;
+    align-items: center;
+    border: solid 2px white;
+    backdrop-filter: blur(3px);
+    text-align: center;
+    color: white;  
+}
+
+.habitat1{
+    height: 300px;
+    width:  300px;
+
+}
+
+
+

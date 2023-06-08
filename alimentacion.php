@@ -50,7 +50,7 @@
 <form action="insert/insertar_alimento.php" method="post">
   <div class="mb-3">
     <label for="input_alimentacion" class="form-label">Alimentacion</label>
-    <input type="text" class="form-control" id="input_alimentacion" name="tipo_alimento">
+    <input type="text" class="form-control" id="input_alimentacion" name="tipo_alimento" Required>
     <div class="form-text">Escribe el tipo de alimento que consume el animal</div>
   </div>
   <div>
@@ -81,6 +81,7 @@ while($fila = mysqli_fetch_array($resultado)){
 <tr class="table">
 <th scope="row"><?php echo $c?></th>
 <td><?php echo $fila['tipo_alimento']?></td>
+
 <td>
 <a href="Update\alimento.php?id_alimentacion= <?php echo $fila['id_alimentacion']?>">
           <i class="bi bi-arrow-clockwise text-warning"></i>

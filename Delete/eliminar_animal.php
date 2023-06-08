@@ -10,5 +10,5 @@
 
     $resultado = mysqli_query ($conn,$consulta);
 
-    header('Location: ../animal.php');
+    header('Location: ../animales.php');
 ?>

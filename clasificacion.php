@@ -16,7 +16,6 @@
 </head>
 
 <body class="bodyclassificacion">
-</div>
     <header>
     <!-- place navbar here -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
@@ -48,39 +47,8 @@
     
   <main class="clasificacionbg">
 
-  <div>
-  <div class="clasificaciones">
-  <div class="boton-aqua">
-    <img class="pezpayaso" src="./imagenes/pezpayaso.jpg" alt="">
-    <h1>Acuaticos</h1>
-  </div>
-
-  <div class="boton-aves">
-    <img class="guacamayo" src="./imagenes/guacamaya.jpg" alt="">
-    <h1>Aves</h1>
-  </div>
-
-  <div class="boton-reptil">
-    <img class="camaleon" src="./imagenes/reptil.jpg" alt="">
-    <h1>Reptiles</h1>
-  </div>
   
-  <div class="boton-anfibio">
-    <img class="anfibio" src="./imagenes/anfibio.jpg" alt="">
-    <h1>Anfibios</h1>
-  </div>
-
-  <div class="boton-insecto">
-    <img class="insecto" src="./imagenes/mariposa.jpeg" alt="">
-    <h1>Insectos</h1>
-  </div>
-
-  <div class="boton-mamifero">
-    <img class="mamifero" src="./imagenes/Jaguar.jpg" alt="">
-    <h1>Mamiferos</h1>
-  </div>
-</div>
-  </div>
+  <div>
   <div class="tabla_clasificacion">
  <!-- ========== Start Form ========== -->
  <form class="entradacl" action="Insert\insertar_clasificacion.php" method="post">

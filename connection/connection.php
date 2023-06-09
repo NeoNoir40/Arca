@@ -2,7 +2,7 @@
 $hostname = "localhost";
 $username = "root";
 $password = "";
-$database = "arca";
+$database = "arc";
 
 $conn = new mysqli($hostname,$username,$password,$database);
 

@@ -3,9 +3,6 @@ nav{
     display: flex;
 }
 
-body{
-    display: grid
-};
 .boton-aqua{
     height: 300px;
     width: 250px;
@@ -133,12 +130,57 @@ body{
     width: 350px;
     padding: 10px;
     margin: 10px;
-    position: f;
+    position: relative;
     align-items: center;
     border: solid 2px white;
     backdrop-filter: blur(3px);
     text-align: center;
     color: white;  
+}
+
+.alimentacion2{
+    height: 400px;
+    width: 350px;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    align-items: center;
+    border: solid 2px white;
+    backdrop-filter: blur(3px);
+    text-align: center;
+    color: white;  
+}
+
+
+.clasificacionimg{
+    height: 300px;
+    width:  300px;
+
+}
+
+.ballenita{
+    height: 300px;
+    width:  300px;
+
+}
+
+.reinoanimal{
+    height: 400px;
+    width: 350px;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    align-items: center;
+    border: solid 2px white;
+    backdrop-filter: blur(3px);
+    text-align: center;
+    color: white;  
+}
+
+.ballenita2{
+    height: 300px;
+    width:  300px;
+
 }
 
 .habitat1{

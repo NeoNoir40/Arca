@@ -14,7 +14,7 @@
 
 </head>
 
-<body>
+<body >
   <header>
     <!-- place navbar here -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
@@ -44,12 +44,12 @@
             <br>
     </nav>
   </header>
-
-  <main class="fondoanimal">
-
+  <main class="fondo-animal">
+<div>
      <!-- ========== Start FORM ========== -->!
-     <div class="tabla_animal">
-          <form action="Insert\insetar_animal.php" method="post">
+
+     <div class="form- animal">
+     <form action="Insert\insetar_animal.php" method="post">
           <div class="mb-3">
     <label for="input_animal" class="form-label">Animal</label>
     <input type="text" class="form-control" id="input_animal" name="nombre_animal" Required>
@@ -59,7 +59,7 @@
     <label for="input_animal" class="form-label">Descripcion</label>
     <input type="text" class="form-control" id="input_animal" name="descripcion_animal">
     <div class="form-text">(Opcional) Escribe algo acerca de este animal</div>
-  </div>
+
   
   <label class="form-label">Clasificacion</label>
     <select name="id_clasificacion" class="form-select">
@@ -98,6 +98,10 @@
 <button class="btn btn-primary" type="submit">Enviar
 </div>
           </form>
+     </div>
+     
+     <div class="tabla_animal">
+       
           
           <!-- ========== End FORM ========== -->
 
@@ -155,6 +159,8 @@ while($fila = mysqli_fetch_array($resultado)){
 <?php $c++; } ?>
 </tbody>
 </table>
+</div>
+</div>
 </div>
 </main>
   <footer>

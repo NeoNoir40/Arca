@@ -28,7 +28,7 @@ $id_habitat = $_GET['id_habitat'];
 
 include('../connection/connection.php');
 
-$consulta = "SELECT * FROM habitat WHERE id_habitat =$id_habitat";
+$consulta = "call arc.a_verWhereHabitat($id_habitat);";
 
 $query = mysqli_query($conn,$consulta);
 

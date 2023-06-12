@@ -7,7 +7,8 @@ $id_alimentacion = $_POST['id_alimentacion'];
 
 include('../connection/connection.php');
 
-$consulta = "UPDATE alimentacion SET tipo_alimento = '$tipo_alimento' WHERE id_alimentacion = '$id_alimentacion'";
+$consulta = "call a_updateAlimentacion('$id_alimentacion', '$tipo_alimento');";
+
 
 $query = mysqli_query($conn,$consulta);
 

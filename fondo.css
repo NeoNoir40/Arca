@@ -104,8 +104,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background: url(./imagenes/animales-fondo.jpg);
+    height: 150vh;
+    background: url(./imagenes/tartaruga.jpg);
     background-size: cover
 }
 
@@ -119,20 +119,32 @@
     color: white;
     border: 3px solid white;
     box-shadow: 0px 0px 25px #222;
+    backdrop-filter: blur(5px);
 }
 
-.table{
+.table1{
+    font-family: 'Geologica', sans-serif;
+    font-size: 20px;
+}
+
+.table1a{
+    overflow: scroll;
     font-family: 'Geologica', sans-serif;
     font-size: 20px;
 }
 
 
 td,tr,th{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .form-animal{
-    overflow: scroll;
+    float: left;
     height: 300px;
     width: 300px;
+    
+}
+
+.form-text{
+    color: white;
 }

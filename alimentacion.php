@@ -59,7 +59,7 @@
 </form>
     <!-- ========== End Form ========== -->
 
-<table class="table">
+    <table class="table table-striped table-hover" style="width:100%">
 <thead>
     <tr>
     <th scope="col">#</th>
@@ -72,13 +72,13 @@
     <?php
 include('connection/connection.php');
 $c =  1;
-$consulta = "SELECT * FROM alimentacion";
+$consulta = "call a_verAllAlimentacion();";
 $resultado = mysqli_query($conn,$consulta);
 
 while($fila = mysqli_fetch_array($resultado)){
 ?>
 
-<tr class="table">
+<tr class="table1">
 <th scope="row"><?php echo $c?></th>
 <td><?php echo $fila['tipo_alimento']?></td>
 
@@ -89,7 +89,7 @@ while($fila = mysqli_fetch_array($resultado)){
 </td>
 <td>
 <a href="Delete\eliminar_alimentacion.php?id_alimentacion= <?php echo $fila['id_alimentacion']?>">
-          <i class="bi bi-trash text-danger"></i>
+          <i class="bi bi-trash3-fill text-danger"></i>
 </td>
 </tr>
 <?php $c++; } ?>
@@ -100,6 +100,17 @@ while($fila = mysqli_fetch_array($resultado)){
   <footer>
     <!-- place footer here -->
   </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<link href="https://cdn.datatables.net/v/bs5/jq-3.6.0/jszip-2.5.0/dt-1.13.4/b-2.3.6/b-colvis-2.3.6/b-html5-2.3.6/b-print-2.3.6/sp-2.1.2/datatables.min.css" rel="stylesheet"/>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+
+<script src="https://cdn.datatables.net/v/bs5/jq-3.6.0/jszip-2.5.0/dt-1.13.4/b-2.3.6/b-colvis-2.3.6/b-html5-2.3.6/b-print-2.3.6/sp-2.1.2/datatables.min.js"></script>
+
+<script src="assets/js/datatables.js"></script>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">

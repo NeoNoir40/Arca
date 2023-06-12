@@ -6,7 +6,7 @@
 
     include('../connection/connection.php');
 
-     $consulta = "DELETE FROM alimentacion WHERE id_alimentacion = $id_alimento";
+     $consulta = "call a_eliminarAlimentacion('$id_alimento')"; 
 
     $resultado = mysqli_query ($conn,$consulta);
 

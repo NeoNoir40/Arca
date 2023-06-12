@@ -28,7 +28,8 @@ $id_animal = $_GET['id_animal'];
 
 include('../connection/connection.php');
 
-$consulta = "SELECT * FROM animal WHERE id_animal =$id_animal";
+$consulta = "call arc.a_verWhereAnimal('$id_animal')";
+;
 
 $query = mysqli_query($conn,$consulta);
 
@@ -47,14 +48,14 @@ $fila = mysqli_fetch_array($query);
 <div class="mb-3">
   <label for="input_animal" class="form-label">Descripcion</label>
       <input type="text" class="form-control" id="input_animal" name="descripcion_animal">
-  <div class="form-text">(Opcional) Escribe algo acerca de este animal</div>
+  <div class="form-text"  >(Opcional) Escribe algo acerca de este animal</div>
 </div>
     
   <label class="form-label">Clasificacion</label>
       <select name="id_clasificacion" class="form-select">
         <?php
           include('../connection/connection.php');
-            $consulta = "SELECT * FROM clasificacion";
+            $consulta = "call a_verAllClasificacion()";
               $query = mysqli_query($conn,$consulta);
                 while ($fila = mysqli_fetch_array($query)){
         ?>
@@ -65,7 +66,7 @@ $fila = mysqli_fetch_array($query);
       <select name="id_alimentacion" class="form-select">
         <?php
           include('../connection/connection.php');
-            $consulta = "SELECT * FROM alimentacion";
+            $consulta = "call a_verAllAlimentacion()";
               $query = mysqli_query($conn,$consulta);
                 while ($fila = mysqli_fetch_array($query)) {
         ?>
@@ -76,7 +77,7 @@ $fila = mysqli_fetch_array($query);
       <select name="id_habitat" class="form-select">
         <?php
           include('../connection/connection.php');
-            $consulta = "SELECT * FROM Habitat";
+            $consulta = "call a_verAllHabitat";
               $query = mysqli_query($conn,$consulta);
                 while ($fila = mysqli_fetch_array($query)) {
         ?>

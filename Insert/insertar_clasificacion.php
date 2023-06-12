@@ -6,7 +6,7 @@
 
     include('../connection/connection.php');
 
-    $consulta = "INSERT INTO clasificacion(nombre_clasificacion) VALUES ('$nombre_clasificacion')";
+    $consulta = "call a_insertarClasificacion('$nombre_clasificacion')";
 
     $resultado = mysqli_query ($conn,$consulta);
 

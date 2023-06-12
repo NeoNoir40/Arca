@@ -6,7 +6,7 @@
 
     include('../connection/connection.php');
 
-    $consulta = "INSERT INTO alimentacion(tipo_alimento) VALUES ('$tipo_aliemnto')";
+    $consulta = "call a_insertarAlimentacion('$tipo_aliemnto')";
 
     $resultado = mysqli_query ($conn,$consulta);
 

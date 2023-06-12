@@ -6,7 +6,7 @@
 
     include('../connection/connection.php');
 
-     $consulta = "DELETE FROM habitat WHERE id_habitat = $id_habitat";
+     $consulta = "call a_eliminarHabitat('$id_habitat')";
 
     $resultado = mysqli_query ($conn,$consulta);
 

@@ -8,7 +8,7 @@ $id_clasificacion = $_POST['id_clasificacion'];
 
 include('../connection/connection.php');
 
-$consulta = "UPDATE clasificacion SET nombre_clasificacion = '$nombre_clasificacion' WHERE id_clasificacion = '$id_clasificacion'";
+$consulta = "call a_updateClasificacion('$id_clasificacion', '$nombre_clasificacion')";
 
 $query = mysqli_query($conn,$consulta);
 

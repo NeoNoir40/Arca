@@ -6,7 +6,7 @@
 
     include('../connection/connection.php');
 
-    $consulta = "INSERT INTO habitat(nombre_habitat) VALUES ('$nombre_habitat')";
+    $consulta = "call a_insertarHabitat('$nombre_habitat')";
 
     $resultado = mysqli_query ($conn,$consulta);
 

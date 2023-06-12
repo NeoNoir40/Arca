@@ -27,7 +27,7 @@ $id_alimentacion = $_GET['id_alimentacion'];
 
 include('../connection/connection.php');
 
-$consulta = "SELECT * FROM alimentacion WHERE id_alimentacion =$id_alimentacion";
+$consulta = "call a_verWhereAlimentacion('$id_alimentacion');";
 
 $query = mysqli_query($conn,$consulta);
 

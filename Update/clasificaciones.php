@@ -27,7 +27,7 @@ $id_clasificacion = $_GET['id_clasificacion'];
 
 include('../connection/connection.php');
 
-$consulta = "SELECT * FROM clasificacion WHERE id_clasificacion =$id_clasificacion";
+$consulta = "call a_verWhereClasificacion('$id_clasificacion');";
 
 $query = mysqli_query($conn,$consulta);
 

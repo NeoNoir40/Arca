@@ -6,7 +6,7 @@
 
     include('../connection/connection.php');
 
-     $consulta = "DELETE FROM clasificacion WHERE id_clasificacion = $id_clasificacion";
+    $consulta = "call a_eliminarClasificacion($id_clasificacion)";
 
     $resultado = mysqli_query ($conn,$consulta);
 

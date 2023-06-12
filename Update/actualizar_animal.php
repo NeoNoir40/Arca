@@ -11,8 +11,7 @@ $id_animal = $_POST['id_animal'];
 
 include('../connection/connection.php');
 
-$consulta = "UPDATE animal SET
-nombre_animal = '$nombre_animal' , descripcion_animal = '$descripcion',id_clasificacion_id = '$clasificacion',id_alimentacion_id = '$alimentacion',id_habitat_id = '$habitat' WHERE id_animal = '$id_animal'";
+$consulta = "call a_updateAnimal('$nombre_animal', '$descripcion', '$clasificacion', '$alimentacion', '$habitat', '$id_animal')";
 
 $query = mysqli_query($conn,$consulta);
 

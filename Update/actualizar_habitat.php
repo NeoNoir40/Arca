@@ -8,7 +8,7 @@ $id_habitat = $_POST['id_habitat'];
 
 include('../connection/connection.php');
 
-$consulta = "UPDATE habitat SET nombre_habitat = '$nombre_habitat' WHERE id_habitat = '$id_habitat'";
+$consulta = "call a_updateHabitat( '$id_habitat','$nombre_habitat')";
 
 $query = mysqli_query($conn,$consulta);
 

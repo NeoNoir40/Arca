@@ -120,9 +120,10 @@ nav{
     position: relative;
     align-items: center;
     border: solid 2px white;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(10px);
     text-align: center;
     color: white;  
+
 }
 
 .clasificacion{
@@ -133,7 +134,7 @@ nav{
     position: relative;
     align-items: center;
     border: solid 2px white;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(10px);
     text-align: center;
     color: white;  
 }

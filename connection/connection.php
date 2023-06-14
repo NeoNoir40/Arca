@@ -11,7 +11,7 @@ if($conn -> connect_error){
 .$conn -> connect_errno);
 }
 
-echo "La conexion fue exitosa";
+//echo "La conexion fue exitosa";
 
 //$conn -> close();
 
